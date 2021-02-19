@@ -29,7 +29,7 @@ class Questionario extends StatelessWidget {
         ...respostas.map((resp) {
           return Resposta(
             resp['texto'],
-            () => quandoResponder(resp['nota'])
+            () => quandoResponder(resp['nota']),
           );
         }).toList(),
       ],

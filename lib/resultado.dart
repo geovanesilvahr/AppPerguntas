@@ -1,5 +1,4 @@
 import 'dart:ui';
-
 import 'package:flutter/material.dart';
 
 class Resultado extends StatelessWidget {
@@ -9,14 +8,14 @@ class Resultado extends StatelessWidget {
   Resultado(this.pontuacao, this.reiniciarQuestionario);
 
   String get fraseResultado {
-    if (pontuacao < 50){
-      return 'Parabéns, você não conhece ela!';
-    } else if (pontuacao < 80){
-      return 'Você é Bom, mas ta quase!';
-    } else if (pontuacao < 100){
-      return 'Excelente, você é quase um parente!';
+    if (pontuacao == 10){
+      return 'Pontos: 10';
+    } else if (pontuacao == 20){
+      return 'Pontos: 20';
+    } else if (pontuacao == 30){
+      return 'Você é um panda? Acertou todas!';
     } else {
-      return 'Sei que é você Geovane!';
+      return 'Pontos: 0';
     }
   }
 
@@ -35,14 +34,15 @@ class Resultado extends StatelessWidget {
           ),
         ),
         FlatButton(
-          child: Text('Reiniciar?',
+          child: Text('Reiniciar',
             style: TextStyle(fontSize: 20),
           ),
-          color: Colors.blue,
+          color: Colors.black,
           textColor: Colors.white,
           onPressed: reiniciarQuestionario,
         )
       ],
+
     );
   }
 }

@@ -16,7 +16,7 @@ class Questao extends StatelessWidget {
         texto,
         style: TextStyle(
           fontSize: 28,
-          color: Color.fromRGBO(0, 134, 100, 1.0)
+          color: Colors.black,
         ),
         textAlign: TextAlign.center,
       ),

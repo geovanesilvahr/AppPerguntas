@@ -10,28 +10,28 @@ class _PerguntaAppState extends State<PerguntaApp>{
   var _perguntaSelecionada = 0;
   final _perguntas = const [
     {
-      'texto': 'Qual é a cor preferida da Panda?',
+      'texto': 'Quais são as cores dos Pandas?',
       'respostas': [
-        {'texto': 'Vermelho', 'nota': 10},
-        {'texto': 'Azul', 'nota': 5},
-        {'texto': 'Roxo', 'nota': 50},
-        {'texto': 'Preto', 'nota': 30},
+        {'texto': 'Vermelho e Roxo', 'nota': 0},
+        {'texto': 'Azul e Amarelo', 'nota': 0},
+        {'texto': 'Roxo e Preto', 'nota': 0},
+        {'texto': 'Preto e Branco', 'nota': 10},
       ],
     }, {
-      'texto': 'Qual é a comida da panda?',
+      'texto': 'Qual é a comida deles?',
       'respostas': [
         {'texto': 'Bambu', 'nota': 10},
-        {'texto': 'Cenoura', 'nota': 5},
-        {'texto': 'Coxinha', 'nota': 50},
-        {'texto': 'Lasanha', 'nota': 30},
+        {'texto': 'Tomate', 'nota': 0},
+        {'texto': 'Coxinha', 'nota': 0},
+        {'texto': 'Carne', 'nota': 0},
       ],
     }, {
-      'texto': 'Qual é o nome da Panda?',
+      'texto': 'O que eles gostam de fazer?',
       'respostas': [
-        {'texto': 'Thaisinha', 'nota': 10},
-        {'texto': 'Panda Rosa', 'nota': 5},
-        {'texto': 'Thata', 'nota': 50},
-        {'texto': 'Thaise', 'nota': 30},
+        {'texto': 'Correr', 'nota': 0},
+        {'texto': 'Brincar', 'nota': 10},
+        {'texto': 'Fazer Barulho', 'nota': 0},
+        {'texto': 'Dançar', 'nota': 0},
       ],
     }
 
@@ -62,7 +62,9 @@ class _PerguntaAppState extends State<PerguntaApp>{
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Você Conhece a Panda?'),
+          title: Text('Você sabe sobre Pandas?'),
+          backgroundColor: Colors.black,
+          centerTitle: true,
         ),
         
         body: Padding(

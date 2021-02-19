@@ -11,7 +11,7 @@ class Resposta extends StatelessWidget{
       width: double.infinity,
       child: RaisedButton(
         textColor: Colors.white,
-        color: Colors.blue,
+        color: Colors.black,
         child: Text(texto),
         onPressed: quandoSelecionado,
       ), 
